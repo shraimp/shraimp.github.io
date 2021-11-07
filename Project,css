@@ -1,0 +1,83 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+body{
+	font-family: 'Shraim';
+	background-color:rgb(117, 207, 61);
+	color:rgb(102, 77, 77);
+	/*overflow:hidden;*/
+}
+
+body * {
+    z-index: 20;
+    color: rgb(192, 1, 1);
+}
+
+.text-container {
+    position: relative;
+  width: 80%;
+    top: 65px;
+  float: right;
+}
+
+#fs {
+    position: relative;
+    color: #000;
+    margin: 20px;
+    cursor: pointer;
+}
+
+header{
+	font-family: 'Standard', serif;
+	font: size 160%;
+	font-weight:700;
+
+	text-decoration:underline;
+
+}
+.full-name
+{   letter-spacing: 3px;
+    font-size: 50px;  
+}
+h2{
+	font-family: 'Standard', serif;
+	font-weight:bold;
+	font-size:20px;
+	height:20px;
+
+}
+    .my-pic{
+        width: 250px;
+        height: 250px;
+}
+
+h3{
+	font-family: 'Standard', serif;
+	font-weight:400;
+	margin-top:-10px;
+}
+
+h4{
+	font-family: 'Standard', serif;
+	font-style:italic;
+	font-weight:400;
+	font-size:12px;
+	margin-top:-15px;
+}
+
+.section{
+	margin:10px;
+	margin-left:2%;
+	width:35%;
+}
+
+
+#education{
+	float:left;
+}
+
+#skills{
+	float:left;
+}
