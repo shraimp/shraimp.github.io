@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+
+body{
+	background: #e4aeae;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+min-height: 100vh;
+	font-size: 14px;
+	line-height: 20px;
+}
+.main-container
+{
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 1000px;
+	background: rgb(110, 57, 57);
+	margin: 20px; 
+	display:grid;
+	grid-template-rows: 1fr ; 
+}
+.main-container .top-container
+{
+	position: relative;
+	background: rgb(189, 103, 103);
+	padding: 40px;
+}
+
+.profiletextinfo
+{
+position: relative;
+text-transform: uppercase;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+border-bottom: 1px solid rgb(105, 55, 66);
+}
+.profiletextinfo .image-box
+{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.profiletextinfo .image-box img
+{
+	position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.profiletextinfo h2
+{
+	color: rgb(206, 206, 206);
+	font-size: 2em;
+	margin-top: 20px;
+	text-transform:capitalize;
+	text-align: center;
+	
+	font-weight: 600;
+	line-height: 2em;
+
+
+}
+.profiletextinfo h2 span 
+{
+	font-size: 1em;
+	font-weight: 300;
+}
+.main-container .bot-container
+{
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 1000px;
+	background: rgb(80, 57, 110);
+	margin: 10px; 
+	display: grid;
+	grid-template-columns: 1fr 1fr ; 
+}
+
+.bot-container .left
+{
+	position: relative;
+	background: rgb(82, 51, 51);
+	padding: 40px;
+
+}
+
+.ContactInfo
+{
+	padding-top: 40px;
+
+}
+.title
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+
+}
+.ContactInfo ul
+{
+position: relative;
+
+}
+.ContactInfo ul li
+{
+	position: relative;
+	list-style: none;
+margin: 10px 0 ;
+cursor: pointer;
+ 
+}
+.ContactInfo ul li .icon
+{
+	display: inline-block;
+	width: 30px;
+	font-size: 10px;
+	color: lightblue;
+
+}
+
+
+.ContactInfo ul li span
+{
+	color: #fff;
+	font-weight: 300;
+
+}
+
+.ContactInfo .Education li
+{color: aliceblue;
+margin-bottom: 15px;
+
+
+}
+ .ContactInfo .Education h5
+{
+	color: lightblue;
+	font-weight: 500;
+
+}
+
+
+
+ .Education h4
+{
+	margin-bottom: 1.5em;
+	 color: rgb(203, 225, 238);
+	 font-weight: 300;
+}
+
+
+
+.bot-container .right
+{	
+	position: relative;
+	background: rgb(65, 26, 26);
+	padding: 40px;
+
+}
+
+.view
+{
+margin-bottom: 50px;
+
+}
+.view:last-child
+{
+	margin-bottom: 0;
+
+
+}
+.title2
+{
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+
+}
+p
+{
+	color: rgb(185, 213, 236);
+}
+.view .box 
+{
+	display: flex;
+	flex-direction:row ;
+	margin: 20px 0;
+
+}
+ .box .skill-title
+{
+	margin-bottom: 1.5em;
+	min-width: 150px;
+	color: aliceblue;
+	text-transform: capitalize;
+	
+}
+
+.view .box .skill-title h5
+{
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	font-weight: 600;
+
+}
+
+
+
+
+
+.ContactInfo.Languages .percentage
+{
+position: relative;
+width: 100%;
+height: 6px;
+background: rgb(31, 0, 0);
+display: block;
+margin-top: 5px;
+
+}
+.ContactInfo.Languages .percentage div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: rgb(44, 90, 218);
+}
+
+.ContactInfo .view
+{
+	position: relative;
+	padding: 40px;
+}
+.right.view .title2
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+
+}
