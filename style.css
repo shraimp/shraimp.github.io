@@ -1,261 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap');
-*{
-	margin: 0;
-	padding: 0;
-	
-	box-sizing: border-box;
-	font-family: 'poppins', sans-serif;
+*,*:after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 body{
-	background: #e4aeae;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-min-height: 100vh;
-	font-size: 14px;
-	line-height: 20px;
+    font-family: arial;
+    font-size: 16px;
+    margin:0;
+    background: #d7ccc8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
 }
-.main-container
-{
-	position: relative;
-	width: 100%;
-	max-width: 1000px;
-	min-height: 1000px;
-	background: rgb(110, 57, 57);
-	margin: 20px; 
-	display:grid;
-	grid-template-rows: 1fr ; 
+img{
+    max-width: 100%;
 }
-.main-container .top-container
-{
-	position: relative;
-	background: rgb(189, 103, 103);
-	padding: 40px;
+.ui-card{
+    justify-content: center;
+    display: grid;
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    background:radial-gradient(#111 50%, #000 100%);
 }
 
-.profiletextinfo
-{
-position: relative;
-text-transform: uppercase;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-bottom: 20px;
-border-bottom: 1px solid rgb(105, 55, 66);
+.ui-card img{
+    transform: scale(1.3);
+    transition: all 0.3s ease-out;
 }
-.profiletextinfo .image-box
-{
-	position: relative;
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	overflow: hidden;
+.ui-card:hover img{
+    transform: scale(1.1) translateY(-20px);
+    opacity: 0.3
 }
-.profiletextinfo .image-box img
-{
-	position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;
+.ui-card .description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
 }
-.profiletextinfo h2
-{
-	color: rgb(206, 206, 206);
-	font-size: 2em;
-	margin-top: 20px;
-	text-transform:capitalize;
-	text-align: center;
-	
-	font-weight: 600;
-	line-height: 2em;
-
+.ui-card .description h3{
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0 0 20px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out;
 
 }
-.profiletextinfo h2 span 
-{
-	font-size: 1em;
-	font-weight: 300;
+.ui-card .description p{
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.2s;
 }
-.main-container .bot-container
-{
-	position: relative;
-	width: 100%;
-	max-width: 1000px;
-	min-height: 1000px;
-	background: rgb(80, 57, 110);
-	margin: 10px; 
-	display: grid;
-	grid-template-columns: 1fr 1fr ; 
+.ui-card .description a{
+    color: #fff;
+    background: #af7d51;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.4s;
 }
-
-.bot-container .left
-{
-	position: relative;
-	background: rgb(82, 51, 51);
-	padding: 40px;
-
+.ui-card .description a:hover{
+    background: saddlebrown;
 }
-
-.ContactInfo
-{
-	padding-top: 40px;
-
+.ui-card:hover .description h3{
+    opacity: 1;
+    transform: translateY(0px);
 }
-.title
-{
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 1px;
-	margin-bottom: 20px;
-
+.ui-card:hover .description p{
+    opacity: 1;
+    transform: translateY(0px);
 }
-.ContactInfo ul
-{
-position: relative;
-
-}
-.ContactInfo ul li
-{
-	position: relative;
-	list-style: none;
-margin: 10px 0 ;
-cursor: pointer;
- 
-}
-.ContactInfo ul li .icon
-{
-	display: inline-block;
-	width: 30px;
-	font-size: 10px;
-	color: lightblue;
-
+.ui-card:hover .description a{
+    opacity: 1;
+    transform: translateY(0px);
 }
 
-
-.ContactInfo ul li span
-{
-	color: #fff;
-	font-weight: 300;
-
-}
-
-.ContactInfo .Education li
-{color: aliceblue;
-margin-bottom: 15px;
-
-
-}
- .ContactInfo .Education h5
-{
-	color: lightblue;
-	font-weight: 500;
-
-}
-
-
-
- .Education h4
-{
-	margin-bottom: 1.5em;
-	 color: rgb(203, 225, 238);
-	 font-weight: 300;
-}
-
-
-
-.bot-container .right
-{	
-	position: relative;
-	background: rgb(65, 26, 26);
-	padding: 40px;
-
-}
-
-.view
-{
-margin-bottom: 50px;
-
-}
-.view:last-child
-{
-	margin-bottom: 0;
-
-
-}
-.title2
-{
-	color: rgb(255, 255, 255);
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin-bottom: 10px;
-
-}
-p
-{
-	color: rgb(185, 213, 236);
-}
-.view .box 
-{
-	display: flex;
-	flex-direction:row ;
-	margin: 20px 0;
-
-}
- .box .skill-title
-{
-	margin-bottom: 1.5em;
-	min-width: 150px;
-	color: aliceblue;
-	text-transform: capitalize;
-	
-}
-
-.view .box .skill-title h5
-{
-	text-transform: uppercase;
-	color: rgb(255, 255, 255);
-	font-weight: 600;
-
-}
-
-
-
-
-
-.ContactInfo.Languages .percentage
-{
-position: relative;
-width: 100%;
-height: 6px;
-background: rgb(31, 0, 0);
-display: block;
-margin-top: 5px;
-
-}
-.ContactInfo.Languages .percentage div
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	background: rgb(44, 90, 218);
-}
-
-.ContactInfo .view
-{
-	position: relative;
-	padding: 40px;
-}
-.right.view .title2
-{
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 1px;
-	margin-bottom: 20px;
-
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
 }
