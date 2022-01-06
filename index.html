@@ -1,173 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shraim resume</title>
-
-<link rel="stylesheet" href="style.css">
+<html>
+  <head>
+    <title>MOHD's Library - Search</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
 
 
-
-</head>
-<body>
-
-    <div class="main-container" >
-
-
-      <!--        top        -->
-         <div class = "top-container"> 
-            <div class = "profiletextinfo">
-              
-                <div class = "image-box">
-    `             <img src="img.jpeg"><br>
-                </div> 
-                    <h2>M.Shraim <br> 
-                        <span> ~B-Tech Mechanical engineering Student</span> </h2>
-            </div> 
-<!--    bot     -->
-
-
-<div class ="bot-container">
-    <div class="left">       
-            <div class = "ContactInfo">
-            
-                <h3 class ="title"> <u>contact(s) </u> </h3>
-                 <ul>
-                     <li>
-                
-                         <span class = "text-info">mshraim295@gmail.com</span>
-                         
-                     </li>
-                     <li>
-                       
-                        <span class = "text-info">+38762515156 </span>
-                        
-                    </li>
-                     <li>
-                        
-                         <span class = "text-info">https://www.instagram.com/shraimp/ </span>
-                         
-                     </li>
-                     <li>
-                         
-                         <span class = "text-info">Sarajevo, ilidza</span>
-                     </li>
-                 </ul>
-             </div>
-
-        
-
-      
-        <div class = " Education">
-    
-            <h3 class ="title"> <u><b>Education </b> </u> </h3>
-                <ul>
-                    <li>
-                        
-                        <h4>Finished High school with a 92.5% in Dubai-UAE (2017-2018) </h4>
-                    </li>
-                    <li>
-                       
-                        <h4> IELTS degree with 5.5 from the British council in Amman-Jordan</h4>
-                    </li>
-                    <li>
-                       
-                        <h4> English Language School certificate (B2) From International University of Sarajevo.</h4>
-                    </li>
-                    <li>
-                        
-                        <h4> Fourth year Mechanical engineering student at International University of Sarajevo </h4>
-                    </li>
-                </ul>       
+  <section id="header">
+    <div class="header">
+      <div class="nav-bar">
+        <div class="brand">
+          <a><h1><span>MOHD's</span>Library</h1></a>
         </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="index.html" data-after="Search">Search</a></li>
+            <li><a href="books.php" data-after="All Books">All Books</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="right">
 
-        <div class="view">
-
-        <div class = "ContactInfo Languages">
-    
-            <h3 class ="title"> <u><b> Languages  </b> </u> </h3>
-         <ul>
-                    <li>
-                    <span class= "text-info" >English </span>
-                    <span class="percentage">
-                <div style="width: 80%;"></div> </span>    
-            </li>
-        
-                    <li>
-                    <span class= "text-info" >Arabic </span>
-                    <span class="percentage">
-                <div style="width: 100%;"></div> </span>  
-            </li>    
-                    <li>
-                    <span class= "text-info" >turkish </span>
-                    <span class="percentage">
-                <div style="width: 45%;"></div></span>   
-            </li>
-                    <li>
-                    <span class= "text-info" >spanish </span>
-                    <span class="percentage">
-                <div style="width: 50%;"></div>  </span> 
-            </li>
-        </ul>
-        </div>
-    </div> 
-          
-
-    
-
-    <h2 class ="title2">Skills</h2>
-    
- <div class="box">
-    <div class = "skill-title">
-    <h5>~ComputerSkills~</h5>
-      <div class="text-info">
-
-        <p>capable of using Microsoft Word, PowerPoint, and Excel efficiently as well as Matlab and Auto-CAD.  </p>
+    <div class="s002">
+      <form method="get" action="bookView.php">
+        <fieldset>
+          <legend style="background-color: rgba(0,0,0,0.62)">SEARCH BOOKS</legend>
+        </fieldset>
+        <div class="inner-form">
+          <div class="input-field first-wrap">
+            <div class="icon-wrap" width="10" height="10">
+                <img src="images/icons8_literature_50px.png" width="10" height="10">
             </div>
-        
+            <input id="search" name="search" type="text" placeholder="Enter the name of the book ..." />
+          </div>
+          <div class="input-field fifth-wrap">
+            <button class="btn-search" type="submit" name="submit" >SEARCH</button>
+          </div>
         </div>
+      </form>
     </div>
+    <script src="js/extention/choices.js"></script>
+    <script src="js/extention/flatpickr.js"></script>
+    <script>
+      flatpickr(".datepicker",
+      {});
 
-<div class="box">
-    <div class = "skill-title">
-        <h5>Football</h5>
-        <div class="text-info">
-       
-        <p>  </p>
-        </div>
-    </div>
-</div>
+    </script>
+    <script>
+      const choices = new Choices('[data-trigger]',
+      {
+        searchEnabled: false,
+        itemSelectText: '',
+      });
 
-<div class="box">
-    <div class = "skill-title">
-        <h5>learning Languages</h5>
-         <div class="text-info">
-        
-        <p>capable of learning Languages quickly    </p>
-        </div>
-    </div>
-</div>
-
-            <div class="box">
-                <div class = "skill-title">
-                     <h5>teamwork</h5>
-                  <div class="text-info">
-      
-                        <p>Communication, Teamwork and Time management skills   </p>
-                 </div>
-              </div>
-            </div>
-
-</div>
-
-
-</div>
-
-</body>
+    </script>
+  </body>
 </html>
-
